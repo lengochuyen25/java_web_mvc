@@ -5,13 +5,19 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
 		  http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
          version="2.5">
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>/WEB-INF/dispatcher-servlet.xml</param-value>
+    </context-param>
+
     <servlet>
-        <servlet-name>customers</servlet-name>
-        <servlet-class>com.codegym.controller.CustomerServlet</servlet-class>
+        <servlet-name>dispatcher</servlet-name>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
     </servlet>
+
     <servlet-mapping>
-        <servlet-name>customers</servlet-name>
-        <url-pattern>/customers</url-pattern>
+        <servlet-name>dispatcher</servlet-name>
+        <url-pattern>/</url-pattern>
     </servlet-mapping>
 
 </web-app>

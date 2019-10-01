@@ -1,7 +1,7 @@
 package com.codegym.model;
 
 public class Customer {
-    private int id;
+    private Integer id;
     private String name;
     private String email;
     private String address;
@@ -16,11 +16,11 @@ public class Customer {
         this.address = address;
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
